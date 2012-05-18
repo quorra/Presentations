@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Greeks and Romans Presentation by Ashley Curtis</title>
+    
+    <meta name="description" content="Greeks and Romans presentation" />
+    <meta name="author" content="Ashley Curtis" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<style>
+th {
+border : thin solid black;
+padding : .5em .5em .5em .5em;
+}
+td {
+padding : .5em .5em .5em .5em;
+}
+</style>
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+    
+    Now that's the core element used by impress.js.
+    
+    That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
+    It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
+    
+    You probably won't need it now, but there are some configuration options that can be set on this element.
+    
+    To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
+    a number of ms. It defaults to 1000 (1s).
+    
+    You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
+    It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
+    If you are willing to change this value make sure you understand how CSS perspective works:
+    https://developer.mozilla.org/en/CSS/perspective
+    
+    But as I said, you won't need it for now, so don't worry - there are some simple but interesing things
+    right around the corner of this tag ;)
+    
+-->
+<div id="impress">
+
+    <!--
+        
+        Here is where interesting thing start to happen.
+        
+        Each step of the presentation should be an element inside the `#impress` with a class name
+        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
+        the 'camera' shows them on each step of the presentation.
+        
+        Positioning information is passed through data attributes.
+        
+        In the example below we only specify x and y position of the step element with `data-x="-1000"`
+        and `data-y="-1500` attributes. This means that **the center** of the element (yes, the center)
+        will be positioned in point x = -1000px and y = -1500px of the presentation 'canvas'.
+        
+        It will not be rotated or scaled.
+        
+    -->
+    <div id="Start" class="step" data-x="-4000" data-y="-1500" data-rotate="180" data-scale="6">
+      <p>What I know about the Greek and Roman citizens.</p>
+    </div>
+    <div id="Next" class="step" data-x="-1000"
+      data-y="-1500">
+      The Romans came after the Greeks.
+    </div>
+    <div id="similar" class="step" data-rotate-y="90" data-x="-1000" data-y="-1500">
+        They have similar
+    </div>
+    <div id="similar1" class="step" data-rotate="180" data-x="-1000"
+    data-y="2000" data-scale="6">
+      <p>Mythology</p>
+      </div>
+    <div id="similar2" class="step" data-x="1000"
+    data-y="2000" data-z="-3000" scale="1" data-rotate="180" data-scale="1">
+      Clothing
+      </div>
+    <div id="similar3" class="step" data-x="-6500" data-rotate="180" data-z="-3000"
+    data-y="2000" data-scale="1">
+      Schooling
+      </div>
+    <div id="similar4" class="step" data-x="-4500"
+    data-y="2000" data-scale="6">
+      Weddings
+      </div>
+    <div id="fun" class="step" data-rotate="180" data-x="0"
+    data-y="-2500">
+          They both have very fun cultures to learn about.
+    </div>
+    
+    <div id="GeographyT" class="step" data-x="0" data-rotate-y="90"
+      data-rotate-z="180" data-y="-2500">
+      <h1>Geography!</h1>
+    </div>
+    <div id="Geography" class="step slide" data-x="0" data-rotate-y="90"
+      data-rotate-z="180" data-y="-2500" data-z="-1000">
+      <ul>
+        <li>Rome is close to Greece.</li>
+        <li>Romans were influenced by Greeks.</li>
+        <li>The similarities are the evidence.</li>
+      </ul>
+    </div>
+    <div id="Map" class="step slide" data-x="0" data-rotate-y="90"
+      data-rotate-z="180" data-y="-2500" data-z="-2000">
+      <h2>Map! THEY ARE CLOSE!!</h2>
+      <img src="images/Greecemap4g2.jpg" width="700" />
+    </div>
+    <div id="MythologyT" class="step" data-x="1000"
+      data-y="-1500">
+      <h1>Mythology</h1>
+      </div>
+    <div id="Mythology" class="step slide" data-x="2000" data-y="-1500">
+      <table>
+        <tr>
+          <th>Greek God</th><th>Roman God</th>
+        </tr>
+        <tr>
+          <td>Zeus</td><td>Jupiter</td>
+        </tr>
+        <tr>
+          <td>Hera</td><td>Juno</td>
+        </tr>
+        <tr>
+          <td>Apollo</td><td>Apollo</td>
+        </tr>
+        <tr>
+          <td>Artemis</td><td>Diana</td>
+        </tr>
+        <tr>
+          <td>Athena</td><td>Minerva</td>
+        </tr>
+        <tr>
+          <td>Aphrodite</td><td>Venus</td>
+        </tr>
+        <tr>
+          <td>Demeter</td><td>Ceres</td>
+        </tr>
+        <tr>
+          <td>Dionysus</td><td>Bacchus</td>
+        </tr>
+        <tr>
+          <td>Hestia</td><td>Vesta</td>
+        </tr>
+      </table>
+    </div>
+    <div id="Mythology2" class="step slide" data-x="3000"
+      data-y="-1500">
+      <table>
+        <tr>
+          <th>Greek God</th><th>Roman God</th>
+        </tr>
+        <tr>
+          <td>Hephaestus</td><td>Vulcan</td>
+        </tr>
+        <tr>
+          <td>Ares</td><td>Mars</td> 
+        </tr>
+        <tr>
+          <td>Hermes</td><td>Mercury</td>
+        </tr>
+        <tr>
+          <td>Poseidon</td><td>Neptune</td> 
+        </tr>
+        <tr>
+         <td>Persephone</td><td>Proserpine</td>
+        </tr>
+        <tr>
+         <td>Cronus</td><td>Saturn</td>
+        </tr>
+      </table>
+    </div>
+    <div id="MythologyAthena" class="step slide" data-x="4000"
+      data-y="-1500"><h2>Athena and Minerva: Twins separated at birth!</h2>
+      <img src="images/499px-Athena_ciste.jpg" width="350"
+      style="vertical-align: top"
+      />&nbsp;&nbsp;<img
+      src="images/433px-2007-07-06_Minerva.jpg" width="350"
+     style="vertical-align: top" />
+    </div>
+    <div id="ClothingT" class="step" data-x="4000"
+      data-y="-1500" data-z="-3000">
+      Clothing
+    </div>
+    <div id="Clothing" class="step slide" data-x="5000"
+      data-y="-1500" data-z="-3000">
+      <ul>
+        <li>Men wear only white togas or tunics that reached their feet.</li>
+        <li>Women togas or tunics have to reach their feet. </li>
+        <li>Togas vs Tunics!</li>
+        <li>At birth a Roman child will get a bulla.</li>
+      </ul>
+        
+    </div>
+    <div id="Togavstunic" class="step slide" data-x="6000"
+    data-y="-1500" data-z="-3000">
+      <h2>Toga v. Tunic. FIGHT!!!</h2>
+      <img
+    src="images/Tunikaklädd_romersk_arbetare,_Nordisk_familjebok.png"
+    width="350" />
+      <img src="images/Toga_(PSF).png" width="250" />
+    </div>
+    <div id="Bulla" class="step slide" data-x="7000" data-y="-1500" data-z="-3000">
+      <h2>Bulla</h2>
+      <img src="images/Roman_boy_wearing_bulla.jpg" />
+      <img src="images/bulla_replica.jpg" />
+    </div>
+    <div id="SchoolT" class="step" data-rotate="90" data-x="8000"
+    data-y="-1500" data-scale="4">
+      Schooling
+    </div>
+    <div id="School" class="step slide" data-x="8000" data-y="-1500">
+     <ul>
+       <li>The Roman and Greek children have to get up before sunrise
+    to go to school.</li>
+       <li>They take naps after lunch time and before the end of school.</li>
+       <li>They learn from scrolls.</li>
+       <li>Older children learn grammar.</li>
+       </ul>
+    </div>
+    <div id="WeddingsT" class="step" data-x="9000" data-rotate="90"
+    data-y="4500" data-scale="10">
+      Weddings
+      </div>
+    <div id="Weddings" class="step slide" data-x="9000" data-rotate="90"
+    data-y="2500" data-z="-1000">
+      <ul>
+        <li>The bride would have to part with her prescious jewelery
+    and give it to her future husband.</li>
+        <li>She would also have to give her childhood toys to her parents.</li>
+        <li>She would have to give her bulla to her father.</li>
+        <li>A Lourrophoros holds water for the guests at the wedding.</li>
+        <li>The bride has to say," Quando tu Gaius, ego Gaia.</li>
+        </ul>
+    </div>
+    <div id="loutrophoros" class="step slide" data-x="9000" data-rotate="90"
+    data-y="3500" data-z="-1000">
+      <h2>Lourrophoros</h2>
+      <img src="images/360px-Loutrophoros_Louvre_CA1960.jpg" />
+    </div>
+    <div id="Conclusion1" class="step" data-x="11000"
+    data-y="-1500" data-scale="6" data-z="3000">
+      I learned about
+      </div>
+    <div id="Conclusion2" class="step" data-x="11000"
+    data-y="-1500">
+      Roman and Greek schools,
+      </div>
+    <div id="Conclusion3" class="step" data-x="11000"
+    data-y="-1500" data-z="-1000">
+      weddings,
+      </div>
+    <div id="Conclusion4" class="step" data-x="10500"
+      data-y="-1500" data-z="-3000">
+      myths,
+      </div>
+    <div id="Conclusion5" class="step" data-x="8000"
+    data-y="-1500" data-z="-10000">
+      and that Romans were influenced by Greeks.
+      </div>
+    <!--
+        
+        So to make a summary of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    -->
+
+</div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+</body>
+</html>
